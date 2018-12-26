@@ -6,7 +6,8 @@ from clientes.listagem import ListaClientes
 
 def lista_clientes():
     lista_clientes = ListaClientes()
-    lista_clientes.lista()
+    lista_clientes.relatorioClientes()
+    # print(lista_clientes.lista())
 
 def main(argv):
     if argv is None:

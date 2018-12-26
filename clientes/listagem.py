@@ -32,4 +32,7 @@ class ListaClientes():
             return self.clientes[cliente]
 
     def relatorioClientes(self):
-        pass
+        print('{:^30}\t{:<30}\t{:<13}'.format('Nome', 'Endereco', 'Telefone'))
+        print('='*75)
+        for c in self.clientes:
+            print('{:^30}\t{:<30}\t{:<13}'.format(c.nome, c.endereco, c.telefone))
