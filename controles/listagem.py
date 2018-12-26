@@ -43,7 +43,11 @@ class ListaRegistros():
             self.registros.append(registro)
 
 
+    def relacao_ent_saida(self):
+        if self.registros is None:
+            self.inicializa_registros()
 
+        return self.registros
 
 
     def relatorio_ent_sai(self):

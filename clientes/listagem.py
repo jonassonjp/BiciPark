@@ -26,7 +26,7 @@ class ListaClientes():
         return novos_clientes
         # self.clientes.extend(clientes)
 
-    def lista(self, cliente=None):
+    def relacao_clientes(self, cliente=None):
         if cliente is None:
             return self.clientes
         else:
