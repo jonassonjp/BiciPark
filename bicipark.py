@@ -2,17 +2,24 @@
 # bicipark.py
 import sys
 from clientes.listagem import ListaClientes
-
+from controles.listagem import ListaRegistros
 
 def lista_clientes():
     lista_clientes = ListaClientes()
     lista_clientes.relatorioClientes()
     # print(lista_clientes.lista())
 
+
+def lista_ent_sai():
+    lista_ent_sai = ListaRegistros()
+    lista_ent_sai.relatorio_ent_sai()
+
+
 def main(argv):
     if argv is None:
         argv = sys.argv
     lista_clientes()
+    lista_ent_sai()
 
 if __name__ == "__main__":
     main(sys.argv)

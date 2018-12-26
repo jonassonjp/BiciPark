@@ -7,14 +7,14 @@ A classe Controle  deve implementar o método __str__ e deve retornar o cliente 
 
 """
 
-class Controle(self):
+class Registro():
 
-    def __init__(self):
+    def __init__(self, cliente, entrada, saida):
         self.cliente = cliente
         self.entrada = entrada
         self.saida = saida
 
-    def __str__(self):
+    def __str__():
         return 'Cliente: ' + self.cliente + ' - Entrada: ' + self.entrada + ' - Saída: ' + self.saida
 
 

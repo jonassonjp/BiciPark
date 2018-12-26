@@ -7,13 +7,14 @@ from clientes.cliente import Cliente
 class ListaClientes():
 
     def __init__(self):
+        self.clientes = None
         self.clientes = self.atualiza_clientes()
 
-    def atualiza_clientes(self, clientes=None):
-        if clientes is None:
+    def atualiza_clientes(self, cliente=None):
+        if cliente is None:
             return self.inicializa_clientes()
-
-        # self.clientes.extend(clientes)
+        else:
+            self.clientes.extend(cliente)
 
     def inicializa_clientes(self):
         novos_clientes = [
