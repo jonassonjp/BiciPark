@@ -8,12 +8,15 @@ objeto cliente for convertido em string deve mostrar o nome - endereço
 
 """
 
-class Cliente(self):
+class Cliente():
 
-    def __init__(nome, endereco, telefone):
+    def __init__(self, nome, endereco, telefone):
         self.nome = nome
         self.endereco = endereco
         self.telefone = telefone
 
+
     def __str__():
         return self.nome + ' - ' + self.endereco
+
+
